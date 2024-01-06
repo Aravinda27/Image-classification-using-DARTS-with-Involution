@@ -6,5 +6,5 @@
 # Architecture search with involution
     python train_search.py --unrolled   #for involutional cells on CIFAR-10
 
-  [Figure:](/home/ksrao/Aravind_files/Involution_DARTS_classification/darts-master/cnn/genes/normal_81.pdf)
+  
 
