@@ -6,5 +6,5 @@
 # Architecture search with involution
     python train_search.py --unrolled   #for involutional cells on CIFAR-10
 
-  
+ ![](Figures/normal_81.pdf)
 
