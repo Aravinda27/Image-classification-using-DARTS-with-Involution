@@ -59,8 +59,8 @@ Sample searched architecture at diffrent epochs
 
 # Architecture evaluation 
         python3 train.py --gpu 0 --batch_size 32 --learning_rate 0.05 --cutout --auxiliary --layer 4 --arch                 "Genotype(normal=[('sep_invo_3x3', 1), ('sep_invo_3x3', 0), ('sep_invo_3x3', 2), ('dil_invo_3x3', 1),
-('skip_connect', 0), ('skip_connect', 2), ('skip_connect', 2), ('skip_connect', 3)], 
-normal_concat=range(2,6), reduce=[('avg_pool_3x3', 0), ('sep_invo_5x5', 1), ('sep_invo_5x5', 2),                   ('skip_connect', 0),('avg_pool_3x3', 0), ('dil_invo_5x5', 3), ('skip_connect', 4), ('sep_invo_5x5', 0)],            reduce_concat=range(2,6))"
+        ('skip_connect', 0), ('skip_connect', 2), ('skip_connect', 2), ('skip_connect', 3)], 
+        normal_concat=range(2,6), reduce=[('avg_pool_3x3', 0), ('sep_invo_5x5', 1), ('sep_invo_5x5', 2),                   ('skip_connect', 0),('avg_pool_3x3', 0), ('dil_invo_5x5', 3), ('skip_connect', 4), ('sep_invo_5x5', 0)],            reduce_concat=range(2,6))"
 
 # Experiments and results
 The search for architecture comprised of 20 cells, however the initial search outcomes were inadequate with merely 10% loss value. It was inferred that this lacklustre performance could be attributed to the expansive search space or the excessive number of layers, which caused the image size to become too small for the model to effectively
@@ -144,6 +144,12 @@ We modified the number of layers in the model to 8, resulting in a significant i
 | Training accuracy | Validation accuracy |
 |----------|----------|
 | 96.41% | 93.17% |
+
+
+# Visualization 
+        python visualize.py DARTS
+
+where DARTS can be replaced by any customised architecture in genotypes.py.
 
 
 
