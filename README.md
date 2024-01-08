@@ -152,6 +152,20 @@ We modified the number of layers in the model to 8, resulting in a significant i
 where DARTS can be replaced by any customised architecture in genotypes.py.
 
 
+# Pre-trained models
+- searched architecture
+[Download .pt file](models/model_search.pt)
+
+- evaluation model
+[Download .pt file](models/model_eval.pt)
+
+# This code is heavily borrowed from
+ - [DARTS](https://github.com/quark0/darts/tree/master)
+ - [Involution](https://github.com/ChristophReich1996/Involution)
+
+
+
+
 
   
 
